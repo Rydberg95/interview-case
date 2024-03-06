@@ -8,8 +8,7 @@ blueprint = Blueprint("base", __name__)
 
 @blueprint.route("/")
 def index():
-    allInsuranceClaims = InsuranceClaim.query.all()
-    return render_template("index.html", all_insurance_claims=allInsuranceClaims)
+    return render_template("index.html")
 
 
 @blueprint.route("/generate_random_claim")
@@ -19,9 +18,10 @@ def generate_random_claim():
     )
     db.session.add(new_claim)
     db.session.commit()
-    return redirect(url_for("base.index"))
+    return redirect(url_for("base.claims"))
 
 
-@blueprint.route("/contact")
-def contact():
-    return render_template("contact.html")
+@blueprint.route("/claims")
+def claims():
+    allInsuranceClaims = InsuranceClaim.query.all()
+    return render_template("claims.html", all_insurance_claims=allInsuranceClaims)

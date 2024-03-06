@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Claims Page
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Insurance Claims</h1>
+    <p>Below is a list of all insurance claims and their claim cost.</p>
+</div>
+
+{% for insurance_claim in all_insurance_claims %}
+<p><strong>{{ insurance_claim.claim_reference }}</strong>: {{ insurance_claim.claim_cost }}</p></br>
+{% endfor %}
+{% endblock %}

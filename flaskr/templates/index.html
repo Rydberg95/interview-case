@@ -9,8 +9,4 @@
     <h1>Content</h1>
     <p>This is where the content for the page goes.</p>
   </div>
-
-  {% for insurance_claim in all_insurance_claims %}
-    <p><strong>{{ insurance_claim.claim_reference }}</strong>: {{ insurance_claim.claim_cost }}</p></br>
-  {% endfor %}
 {% endblock %}
