@@ -17,3 +17,9 @@ class User(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(unique=True)
     email: Mapped[str]
+
+
+class InsuranceClaim(db.Model):
+    id: Mapped[int] = mapped_column(primary_key=True)
+    claim_reference: Mapped[str] = mapped_column(unique=True)
+    claim_cost: Mapped[float]
