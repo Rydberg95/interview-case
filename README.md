@@ -38,5 +38,5 @@ Although you could answer some of the below questions by presenting your reasoni
 The insurance policy object should (at least) have (1) a unique identifier and (2) a premium (price of the insurance.) Create a page similar to the one displaying claims, but for insurance policies. All though not mandatory, feel free to add styling of the page as you'd like.
 
 * **Export the available claims data to a data file**  
-Create a new web endpoint that, when visited, creates a data file containing the claims data that is available.
+Create a new web endpoint that, when visited, creates and saves a data file containing the claims data that is available.
 *Since the [pandas](https://pandas.pydata.org/) library is used for calculations carried out by ClaimBook (the application you would develop), solutions where this might be used are preferred.*
