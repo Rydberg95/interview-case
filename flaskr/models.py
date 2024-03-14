@@ -1,5 +1,4 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String
 from flaskr.extensions import db
 
 
@@ -11,12 +10,6 @@ def create_database_tables(app):
 
 class Base(DeclarativeBase):
     pass
-
-
-class User(db.Model):
-    id: Mapped[int] = mapped_column(primary_key=True)
-    username: Mapped[str] = mapped_column(unique=True)
-    email: Mapped[str]
 
 
 class InsuranceClaim(db.Model):

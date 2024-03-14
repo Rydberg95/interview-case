@@ -38,7 +38,7 @@ Although you could answer some of the below questions by presenting your reasoni
 The insurance policy object should (at least) have (1) a unique identifier and (2) a premium (price of the insurance.) Create a page similar to the one displaying claims, but for insurance policies. All though not mandatory, feel free to add styling of the page as you'd like.
 
 * **Import claims data from a data file**
-Inspect the file called *claims_data_to_import*. Create a new endpoint (e.g. "/import_claims") that reads the contents of this file, and imports into the application. When you're done with the import, the claims data should be visible alongside the generated claims in the claims list.
+Inspect the file called *claims_data_to_import*. Create a new endpoint (e.g. `/import_claims`) that reads the contents of this file, and imports into the application. When you're done with the import, the claims data should be visible alongside the generated claims in the claims list.
 
 * **Export the available claims data to a data file**  
 Create a new web endpoint that, when visited, creates and saves a data file containing the claims data that is available. 
