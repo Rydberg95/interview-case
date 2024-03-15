@@ -6,10 +6,10 @@ The documentation and questions will be in English, but the interview will be he
 ### Description
 The codebase for the interview case is a template project written in Python with the flask library being the main library serving the application. Documentation for the flask library can be found at [https://flask.palletsprojects.com](https://flask.palletsprojects.com). Since flask is a quite "bare bones" library, the [cookiecutter-flask](https://github.com/cookiecutter-flask/cookiecutter-flask) template project has been used as inspiration to creating this template.
 
-The datamodel provided in this sample project only contains a single "Insurance Claim" object. This objects reflects an insurance claim (sv. "skadeanmälan") reported by a customer. The 
+The datamodel provided in this sample project only contains a single "Insurance Claim" object. This objects reflects an insurance claim (sv. "skadeanmälan") reported by a customer. 
 
 ### Running the project
-Follow the below steps for running the application. UNIX commands is used for commands like `cd` and `source` and will have to be adjusted slightly if the host OS doesn't support UNIX commands.
+Follow the below steps for running the application. UNIX commands are used for commands like `cd` and `source` and will have to be adjusted slightly if the host OS doesn't support UNIX commands.
 
 **Python 3.x is assumed to be installed prior to following below steps.** Python 3.12 was used when making the project, but any relatively recent Python version should work without issues.
 
@@ -27,7 +27,7 @@ Run the application
 
 You should now be able to see terminal output saying that the flask app is running, and at what address you can access the application in the web browser.
 
-You can now visit the endpoint `/generate_random_claim` to generate a random insurance claim, that should show then be displayed in your browser.
+You can now visit the endpoint `/generate_random_claim` to generate a random insurance claim, that should be displayed in your browser.
 
 ### Tasks and Questions
 
